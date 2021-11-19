@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array method</title>
+</head>
+<body>
+    <h1 id="head">Array methods are the functions that can be applied on array</h1>
+    <p id="demo1"></p>
+    <b><p id = "demo2"></p> </b>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <!-- // array method -->
+    <button onclick="myFunction()">Click me</button>
+
+    <script>
+       
+        const myArr = ["bananas","apple","guava",null,undefined,78,101,true,78]
+        document.getElementById("demo1").innerHTML = myArr
+        myArr[0] = "Orange";
+        myArr[1] = 1
+        
+        document.getElementById("demo2").innerHTML = myArr.pop();
+        myArr.push(88)
+        document.getElementById("demo3").innerHTML= myArr;
+        myArr.shift();
+        document.getElementById("demo4").innerHTML = myArr
+        myArr.unshift("Jackfruit")
+        document.getElementById("demo5").innerHTML = myArr;
+        console.log(myArr.length)
+        console.log(typeof myArr)
+
+        const myFunction = ()=>{
+            document.getElementById("head").innerHTML = myArr1;
+        }
+
+        const myArr1 = myArr.splice(5,3,"lemon",9999);
+        console.log(myArr1)
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
